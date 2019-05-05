@@ -1,7 +1,7 @@
 # CCNA-Sécurité
 
-Nous avons choisi ce Tp sur la sécurité car nous sommes intéréssé tous les deux par la sécurité informatique.
-Ce Tp nous a permis de consolider nos connaissances mais aussi d'apprendre, de découvrir des outils permettant de ssécuriser unne infra.
+Nous avons choisi ce Tp sur la sécurité car nous sommes intéréssés tous les deux par la sécurité informatique.
+Ce Tp nous a permis de consolider nos connaissances mais aussi d'apprendre, de découvrir des outils permettant de sécuriser une infra.
 
 ## Sujet
 
