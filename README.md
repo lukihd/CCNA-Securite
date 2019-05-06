@@ -39,6 +39,6 @@ Renforcer la sécurité d'une topologie simple qui comporte quelques services r�
 
 ## Choix de l'infra
 
-![schéma infra](https://github.com/lukihd/CCNA-Securite/blob/master/Annexes/sch%C3%A9ma.png)
+![schéma infra](https://github.com/lukihd/CCNA-Securite/blob/master/Annexes/infra.png)
 
 ## Mise en place de l'infra
