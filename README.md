@@ -3,6 +3,13 @@
 Nous avons choisi ce Tp sur la sécurité car nous sommes intéréssés tous les deux par la sécurité informatique.
 Ce Tp nous a permis de consolider nos connaissances mais aussi d'apprendre, de découvrir des outils permettant de sécuriser une infra.
 
+## Sommaire
+
+[Firewalld](#Firewalld)
+[Serveur Web](#ServeurWeb)
+[Nagios](#Monitoring)
+[Bind](https://github.com/lukihd/CCNA-Securite/blob/master/Bind%20pour%20le%20DNS%20et%20le%20DNSSEC.md)
+
 ## Sujet
 
 Renforcer la sécurité d'une topologie simple qui comporte quelques services réseaux.
@@ -66,3 +73,30 @@ Les règles présentes par défauts sur le système se cachent dans le dossier:
 
  ```/usr/share/modsecurity-crs```
 
+## Monitoring
+
+Après de nombreuses recherches, nous avons trouvé Nagios qui est un des plus populaire des sytèmes monitoring open source.
+Nagios est uitle pour garder un inventaire des serveurs et pour assurer les services critiques sont opérationnels.
+C'est un outil esssentiel pour tout environnement de rserveur de producion.
+
+Tout d'abord il faut installer des librairies pour compléter l'installation par la suite:
+```sudo yum install gcc glibc glibc-common gd gd-devel make net-snmp openssl-devel xinetd unzip```
+
+Puis on installe Nagios core
+```centos@router# sudo curl -L -O https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.1.1.tar.gz```
+
+```centos@router# sudo tar xvf nagios-*.tar.gz```
+
+Il faut ensuite mettre en marche quelques commandes :
+```
+sudo make install
+sudo make install-commandmode
+sudo make install-init
+sudo make install-config
+sudo make install-webconf
+```
+
+Pour finit l'installation, il faut installer les plugins qui finalise l'installation de nagios:
+```centos@router# sudo curl -L -O http://nagios-plugins.org/download/nagios-plugins-2.1.1.tar.gz```
+
+Depuis cette étape impossible de dézipper le plugins, et donc impossible de configurer le nagios. 
