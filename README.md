@@ -61,7 +61,7 @@ A noter qu'il architeture plus sécurisée consiste à utiliser deux firewalls p
 
 ```centos@client1# sudo firewall-cmd --zone=work --change-interface=enp0s8```
 
-## Serveur web 
+## ServeurWeb 
 
 Pour le serveur web, nous avons choisi de prendre apacha, que nous avons le plus souvent utilisé. Et en matière de sécurité, il est très bine car toutes les failles possibles ont été prises en compte.
 De plus, on a utilisé un module d'Apache, ModSecurity. Il permet de sécuriser la couche applicative avant l'arrivée des requêtes sur le site hébergé.
